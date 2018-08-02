@@ -10,6 +10,8 @@
 	  
 */
 #include<stdio.h>
+
+// 开一个char型数组 radix[13] 来表示这种对应关系
 char radix[13] = {
 	'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C'
 };
@@ -20,6 +22,10 @@ int main()
 	scanf("%d%d%d", &r,&g,&b);
 	printf("#");
 	
+	/* 
+	   依照原始数据输入顺序，依次输出每个原始十进制数的转换结果；
+	   每个结果 先输出高位，再输出低位；
+	*/
 	printf("%c%c", radix[r/13],radix[r%13]);
 	printf("%c%c", radix[g/13],radix[g%13]);
 	printf("%c%c", radix[b/13],radix[b%13]);
