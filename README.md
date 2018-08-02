@@ -1,4 +1,4 @@
-# PAT
+# PAT in gcc
 Programming Ability Test 
 - Basic Level (50 issues)
 - Advanced Level (107 issues)
