@@ -18,11 +18,12 @@
 */
 
 // 将 数字 和 字母 转换为 hash 的下标
+// 将 本不连续的 ASCII 码 映射到 一片连续的整数空间； 
 int change( char c )
 {
-	if( c>='0' && c<='9')	return c - '0';
-	if( c>='a' && c<='z')	return c - 'a' + 10;
-	if( c>='A' && c<='Z')	return c - 'A' + 36;
+	if( c>='0' && c<='9')	return c - '0';			// 映射到 整数  0 ~ 9 
+	if( c>='a' && c<='z')	return c - 'a' + 10;    // 映射到 整数 10 ~ 35 
+	if( c>='A' && c<='Z')	return c - 'A' + 36;    // 映射到 整数 36 ~ 61
 }
 
 int main()
